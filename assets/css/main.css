@@ -495,6 +495,11 @@ section.hero {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
@@ -505,21 +510,44 @@ section.hero {
           justify-content: center;
   width: 100%;
   height: 100vh;
+  min-height: 430px;
   background-image: url(../img/hero-2.jpg);
   background-position: center center;
   background-size: cover; }
   section.hero .hero-content {
-    margin: 0 30px; }
+    margin: 0 30px;
+    text-align: center; }
     section.hero .hero-content h1 {
       font-size: 68px;
       color: #fff;
-      margin-top: 0px; }
+      margin-top: 0px;
+      margin-bottom: 0px; }
     section.hero .hero-content h2 {
       font-size: 30px;
-      font-weight: normal;
+      font-weight: lighter;
       color: #fff;
       text-align: center; }
-  @media (max-width: 790px) {
+    section.hero .hero-content .hero-buttons {
+      margin-top: 70px; }
+    section.hero .hero-content .contact-button {
+      font-size: 18px;
+      font-weight: normal;
+      letter-spacing: 1px;
+      color: #fff;
+      text-align: center;
+      padding: 10px 30px;
+      border: 2px solid white;
+      -webkit-border-radius: 50px;
+              border-radius: 50px;
+      -webkit-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out;
+      cursor: pointer; }
+    section.hero .hero-content .contact-button:hover {
+      font-weight: bold;
+      color: #4a4c4f;
+      background: #fff;
+      padding: 10px 40px; }
+  @media (max-width: 767px) {
     section.hero .hero-content h1 {
       font-size: 52px; }
     section.hero .hero-content h2 {
@@ -528,7 +556,60 @@ section.hero {
     section.hero .hero-content h1 {
       font-size: 36px; }
     section.hero .hero-content h2 {
-      font-size: 17px; } }
+      font-size: 18px; }
+    section.hero .hero-content .contact-button {
+      font-size: 15px; } }
+
+.learnMore {
+  text-align: center;
+  margin-top: -80px; }
+  .learnMore .learnMore-button {
+    font-size: 18px;
+    font-weight: normal;
+    letter-spacing: 1px;
+    color: #fff; }
+  .learnMore .learnMore-arrow {
+    margin-left: 37px;
+    margin-top: 20px;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-left: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    -webkit-animation: sdb04 2s infinite;
+            animation: sdb04 2s infinite;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; }
+
+@-webkit-keyframes sdb04 {
+  0% {
+    -webkit-transform: rotate(-45deg) translate(0, 0); }
+  20% {
+    -webkit-transform: rotate(-45deg) translate(-10px, 10px); }
+  40% {
+    -webkit-transform: rotate(-45deg) translate(0, 0); } }
+
+@keyframes sdb04 {
+  0% {
+    -webkit-transform: rotate(-45deg) translate(0, 0);
+            transform: rotate(-45deg) translate(0, 0); }
+  20% {
+    -webkit-transform: rotate(-45deg) translate(-10px, 10px);
+            transform: rotate(-45deg) translate(-10px, 10px); }
+  40% {
+    -webkit-transform: rotate(-45deg) translate(0, 0);
+            transform: rotate(-45deg) translate(0, 0); } }
+
+@media (max-width: 412px) {
+  .learnMore .learnMore-button {
+    font-size: 15px; }
+  .learnMore .learnMore-arrow {
+    margin-left: 30px;
+    width: 25px;
+    height: 25px; } }
 
 .flex {
   display: -webkit-box;
