@@ -22,6 +22,7 @@ section.tools
         flex-direction: row
         max-width: 600px
     .icon-div
+        position: relative
         display: flex
         align-items: center
         justify-content: center
@@ -42,6 +43,28 @@ section.tools
     .logo-wide
         width: 60%
         height: auto
+    .overlay
+        position: absolute
+        top: 0
+        bottom: 0
+        left: 0
+        right: 0
+        height: 100%
+        width: 100%
+        opacity: 0
+        transition: .5s ease
+        background-color: rgb(87, 88, 89)
+    .icon-div:hover .overlay
+        opacity: 0.95
+    .tool-name
+        color: white
+        font-size: 18px
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        @media (max-width: 767px)
+            font-size: 14px
 @media (max-width: 970px)
     section.tools
         .col-1
