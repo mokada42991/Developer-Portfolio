@@ -662,7 +662,7 @@ section.about {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: #e6e6e6;
+  background: #f2f2f2;
   margin-top: 60px;
   padding: 60px 0 70px 0; }
   section.about .about-content {
@@ -708,7 +708,7 @@ section.about {
 
 section.services {
   margin-top: 80px;
-  padding-bottom: 50px; }
+  padding-bottom: 40px; }
   section.services h3 {
     margin: auto 10px; }
   section.services .flex {
@@ -735,12 +735,13 @@ section.services {
 @media (max-width: 640px) {
   section.services {
     margin-top: 50px;
-    padding-bottom: 40px; }
+    padding-bottom: 20px; }
     section.services .col-1 {
       margin: 20px 15px; } }
 
 section.tools {
-  margin: 60px 0;
+  margin: 40px 0;
+  padding: 30px 0 70px 0;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -752,22 +753,32 @@ section.tools {
   -webkit-box-pack: center;
   -webkit-justify-content: center;
       -ms-flex-pack: center;
-          justify-content: center; }
+          justify-content: center;
+  background: #f2f2f2; }
   section.tools .col-1 {
     max-width: 240px;
+    margin-left: 15px;
     margin-right: 100px; }
-  section.tools .tool-grid1 {
+  section.tools .tool-grid {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
-    max-width: 300px;
-    margin: 0; }
+    max-width: 600px;
+    margin-right: 15px; }
   section.tools .icon-row {
     display: -webkit-box;
     display: -webkit-flex;
@@ -778,8 +789,8 @@ section.tools {
     -webkit-flex-direction: row;
         -ms-flex-direction: row;
             flex-direction: row;
-    max-width: 300px; }
-  section.tools .tool-icon {
+    max-width: 600px; }
+  section.tools .icon-div {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -793,14 +804,39 @@ section.tools {
         -ms-flex-pack: center;
             justify-content: center;
     width: 150px;
-    height: 100px;
-    border: 0.1px solid #cccccc; }
+    height: 100px; }
+    @media (max-width: 890px) {
+      section.tools .icon-div {
+        width: 110px; } }
+    @media (max-width: 767px) {
+      section.tools .icon-div {
+        width: 100px;
+        height: 80px; } }
+    @media (max-width: 430px) {
+      section.tools .icon-div {
+        width: 78px;
+        height: 78px; } }
+  section.tools .logo {
+    height: 60%;
+    width: auto; }
+  section.tools .logo-wide {
+    width: 60%;
+    height: auto; }
+
+@media (max-width: 970px) {
+  section.tools .col-1 {
+    margin-right: 15px; } }
 
 @media (max-width: 640px) {
-  section.tools .tool-grid1 {
-    margin: 0 10px; }
-  section.tools .tool-grid2 {
-    margin: 0 10px; } }
+  section.tools {
+    margin-top: 0px; }
+    section.tools .flex {
+      margin-top: 0px; }
+    section.tools .col-1 {
+      max-width: none;
+      margin: 0 15px; }
+    section.tools .tool-grid {
+      margin: 0; } }
 
 .flex {
   display: -webkit-box;
