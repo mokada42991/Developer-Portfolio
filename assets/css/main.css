@@ -461,6 +461,12 @@ hr {
   margin: 10px 0 30px;
   height: 0; }
 
+li {
+  color: #919191;
+  font-size: 15px;
+  line-height: 1.5;
+  letter-spacing: 0.5px; }
+
 a {
   color: black;
   text-decoration: none;
@@ -503,7 +509,7 @@ body {
     font-size: 32px; }
   h4 {
     font-size: 18px; }
-  p {
+  p, li {
     font-size: 13px; } }
 
 @media (max-width: 412px) {
@@ -511,7 +517,7 @@ body {
     font-size: 26px; }
   h4 {
     font-size: 16px; }
-  p {
+  p, li {
     font-size: 12px; } }
 
 section.hero {
@@ -866,7 +872,9 @@ section.tools {
       margin: 0; } }
 
 section.experience {
-  margin-top: 80px; }
+  margin: 80px 0 0 0; }
+  section.experience .flex {
+    margin-top: 0px; }
   section.experience .col-1 {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -875,11 +883,6 @@ section.experience {
             flex-direction: column;
     text-align: center;
     margin-right: 50px; }
-    section.experience .col-1 p {
-      font-size: 13px;
-      margin-top: 10px; }
-  section.experience .quote {
-    margin-top: 25px; }
   section.experience .palmberg-logo {
     width: 270px;
     height: auto; }
@@ -898,6 +901,39 @@ section.experience {
         -ms-flex-pack: start;
             justify-content: flex-start;
     margin-left: 40px; }
+    section.experience .col-2 ul {
+      margin-top: 0; }
+
+section.testimonial {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 30px 0; }
+  section.testimonial .flex {
+    -webkit-border-radius: 10px;
+            border-radius: 10px;
+    padding: 20px 30px 10px 30px;
+    max-width: 800px;
+    margin-top: 0;
+    background-image: url(../img/testimonial-bg.jpg);
+    background-position: center center;
+    background-size: cover; }
+    section.testimonial .flex .col-3 {
+      text-align: center; }
+      section.testimonial .flex .col-3 .quote {
+        margin-bottom: 15px; }
+      section.testimonial .flex .col-3 p {
+        font-size: 14px;
+        color: #fff; }
 
 .flex {
   display: -webkit-box;
