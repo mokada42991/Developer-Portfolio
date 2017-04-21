@@ -8,12 +8,15 @@ section.projects
     .flex
         margin-top: 20px
     .col-1
+        flex-direction: column
         position: relative
         max-width: 375px
+        margin-bottom: 20px
     .project-thumbnail
         width: 100%
         height: auto
-    .project-overlay
+        border-radius: 10px
+    //.project-overlay
         position: absolute
         top: 0
         bottom: 0
@@ -21,12 +24,13 @@ section.projects
         right: 0
         height: 100%
         width: 100%
+        border-radius: 10px
         opacity: 0
         transition: .5s ease
         background-color: rgb(87, 88, 89)
-    .col-1:hover .project-overlay
+    //.col-1:hover .project-overlay
         opacity: 0.9
-    .project-name
+    //.project-name
         text-align: center
         color: white
         font-size: 18px
@@ -34,3 +38,22 @@ section.projects
         top: 50%
         left: 50%
         transform: translate(-50%, -50%)
+    .link-button
+        font-size: 18px
+        font-weight: bold
+        letter-spacing: 1px
+        color: rgb(28, 38, 44)
+        text-align: center
+        padding: 10px 30px
+        border: 2px solid rgb(28, 38, 44)
+        border-radius: 50px
+        transition: all 0.3s ease-in-out
+        cursor: pointer
+    .link-button:hover
+        font-weight: bold
+        color: white
+        background: rgb(28, 38, 44)
+        padding: 10px 40px
+    @media (max-width: 412px)
+        .link-button
+            font-size: 15px
