@@ -1,0 +1,69 @@
+section.contact
+    background: rgb(96, 106, 116)
+    .flex
+        margin: 0
+        padding: 60px 0 110px 0
+    .col-3
+        text-align: center
+    h3
+        color: white
+    h4
+        color: white
+        margin-bottom: 80px
+    .mail-button
+        font-size: 32px
+        font-weight: normal
+        letter-spacing: 1px
+        color: white
+        text-align: center
+        padding: 10px 30px
+        border: 2px solid white
+        border-radius: 50px
+        transition: all 0.3s ease-in-out
+        cursor: pointer
+    .mail-button:hover
+        font-weight: bold
+        color: rgb(28, 38, 44)
+        background: white
+        padding: 10px 40px
+    .mail-arrow
+        margin-left: 80px
+        margin-top: 30px
+        position: absolute
+        width: 30px
+        height: 30px
+        border-left: 2px solid white
+        border-bottom: 2px solid white
+        transform: rotate(-45deg)
+        animation: bounce 2s infinite
+        box-sizing: border-box
+        transition: all 0.3s ease-in-out
+    @-webkit-keyframes bounce
+    	0%
+    		-webkit-transform: rotate(-45deg) translate(0, 0)
+    	20%
+    		-webkit-transform: rotate(-45deg) translate(-10px, 10px)
+    	40%
+    		-webkit-transform: rotate(-45deg) translate(0, 0)
+    @keyframes bounce
+    	0%
+    		transform: rotate(-45deg) translate(0, 0)
+    	20%
+    		transform: rotate(-45deg) translate(-10px, 10px)
+    	40%
+    		transform: rotate(-45deg) translate(0, 0)
+    @media (max-width: 767px)
+        .mail-button
+            font-size: 26px
+        .mail-arrow
+            margin-left: 65px
+    @media (max-width: 540px)
+        h3
+            font-size: 26px
+        .mail-button
+            font-size: 22px
+    @media (max-width: 412px)
+        .mail-button
+            font-size: 18px
+        .mail-arrow
+            margin-left: 55px

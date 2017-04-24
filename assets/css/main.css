@@ -540,7 +540,7 @@ section.hero {
           justify-content: center;
   width: 100%;
   height: 100vh;
-  min-height: 430px;
+  min-height: 500px;
   background-image: url(../img/hero-2.jpg);
   background-position: center center;
   background-size: cover; }
@@ -708,7 +708,8 @@ section.about {
 
 @media (max-width: 640px) {
   section.about {
-    padding-top: 30px; }
+    padding-top: 30px;
+    padding-bottom: 0px; }
     section.about .about-content {
       padding: 0; }
     section.about .profile-pic {
@@ -1020,9 +1021,22 @@ section.projects {
     margin-bottom: 20px; }
   section.projects .project-thumbnail {
     width: 100%;
-    height: auto;
+    height: 100%;
+    overflow: hidden;
     -webkit-border-radius: 10px;
             border-radius: 10px; }
+  section.projects .project-image {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    -webkit-border-radius: 10px;
+            border-radius: 10px;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out; }
+  section.projects .project-image:hover {
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1); }
   section.projects .link-button {
     font-size: 18px;
     font-weight: bold;
@@ -1041,9 +1055,109 @@ section.projects {
     color: white;
     background: #1c262c;
     padding: 10px 40px; }
-  @media (max-width: 412px) {
+  @media (max-width: 767px) {
     section.projects .link-button {
       font-size: 15px; } }
+
+@media (max-width: 800px) {
+  section.projects h4 {
+    font-size: 17px; } }
+
+@media (max-width: 640px) {
+  section.projects {
+    padding: 30px 0 0 0; }
+    section.projects .flex {
+      margin-top: 10px; }
+    section.projects .col-1 {
+      margin-bottom: 50px; } }
+
+section.contact {
+  background: #606a74; }
+  section.contact .flex {
+    margin: 0;
+    padding: 60px 0 110px 0; }
+  section.contact .col-3 {
+    text-align: center; }
+  section.contact h3 {
+    color: white; }
+  section.contact h4 {
+    color: white;
+    margin-bottom: 80px; }
+  section.contact .mail-button {
+    font-size: 32px;
+    font-weight: normal;
+    letter-spacing: 1px;
+    color: white;
+    text-align: center;
+    padding: 10px 30px;
+    border: 2px solid white;
+    -webkit-border-radius: 50px;
+            border-radius: 50px;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer; }
+  section.contact .mail-button:hover {
+    font-weight: bold;
+    color: #1c262c;
+    background: white;
+    padding: 10px 40px; }
+  section.contact .mail-arrow {
+    margin-left: 80px;
+    margin-top: 30px;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-left: 2px solid white;
+    border-bottom: 2px solid white;
+    -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    -webkit-animation: bounce 2s infinite;
+            animation: bounce 2s infinite;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out; }
+
+@-webkit-keyframes bounce {
+  0% {
+    -webkit-transform: rotate(-45deg) translate(0, 0); }
+  20% {
+    -webkit-transform: rotate(-45deg) translate(-10px, 10px); }
+  40% {
+    -webkit-transform: rotate(-45deg) translate(0, 0); } }
+
+@keyframes bounce {
+  0% {
+    -webkit-transform: rotate(-45deg) translate(0, 0);
+            transform: rotate(-45deg) translate(0, 0); }
+  20% {
+    -webkit-transform: rotate(-45deg) translate(-10px, 10px);
+            transform: rotate(-45deg) translate(-10px, 10px); }
+  40% {
+    -webkit-transform: rotate(-45deg) translate(0, 0);
+            transform: rotate(-45deg) translate(0, 0); } }
+  @media (max-width: 767px) {
+    section.contact .mail-button {
+      font-size: 26px; }
+    section.contact .mail-arrow {
+      margin-left: 65px; } }
+  @media (max-width: 540px) {
+    section.contact h3 {
+      font-size: 26px; }
+    section.contact .mail-button {
+      font-size: 22px; } }
+  @media (max-width: 412px) {
+    section.contact .mail-button {
+      font-size: 18px; }
+    section.contact .mail-arrow {
+      margin-left: 55px; } }
+
+section.footer {
+  background: #1c262c; }
+  section.footer .flex {
+    margin: 0;
+    padding: 50px 0; }
 
 .flex {
   display: -webkit-box;
