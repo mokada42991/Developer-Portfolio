@@ -3,3 +3,46 @@ section.footer
     .flex
         margin: 0
         padding: 50px 0
+    .col-3
+        display: flex
+        align-items: center
+        justify-content: center
+        flex-direction: column
+        text-align: center
+    .social-row
+        display: flex
+        flex-direction: row
+        margin-bottom: 30px
+    .social-div
+        margin: 30px
+        padding: 20px
+        border: 2px solid white
+        border-radius: 20px
+        opacity: 0.2
+        transition: .5s ease
+    .social-div:hover
+        opacity: 1
+        cursor: pointer
+    .social-media-icon
+        width: 25px
+    p
+        font-size: 12px
+    a
+        transition: .5s ease
+    a:hover
+        color: white
+    @media (max-width: 520px)
+        .social-div
+            margin: 15px
+            padding: 15px
+        .social-media-icon
+            width: 20px
+    @media (max-width: 350px)
+        .social-div
+            margin: 10px
+            padding: 10px
+            border-radius: 15px
+        .social-media-icon
+            width: 15px
+        p
+            font-size: 10px
