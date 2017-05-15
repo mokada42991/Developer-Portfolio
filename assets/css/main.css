@@ -668,7 +668,7 @@ section.about {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: #f2f2f2;
+  background: #e6e6e6;
   margin-top: 60px;
   padding: 60px 0 70px 0; }
   section.about .about-content {
@@ -767,7 +767,7 @@ section.tools {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: #f2f2f2; }
+  background: #e6e6e6; }
   section.tools .col-1 {
     max-width: 240px;
     margin-left: 15px;
@@ -847,9 +847,9 @@ section.tools {
     opacity: 0;
     -webkit-transition: .5s ease;
     transition: .5s ease;
-    background-color: #575859; }
+    background-color: #1c262c; }
   section.tools .icon-div:hover .overlay {
-    opacity: 0.95; }
+    opacity: 0.8; }
   section.tools .tool-name {
     color: white;
     font-size: 18px;
@@ -1007,7 +1007,7 @@ section.projects {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 40px 0 80px 0;
-  background: #f2f2f2; }
+  background: #e6e6e6; }
   section.projects .flex {
     margin-top: 20px; }
   section.projects .col-1 {
@@ -1044,7 +1044,7 @@ section.projects {
     color: #1c262c;
     text-align: center;
     padding: 10px 30px;
-    border: 2px solid #1c262c;
+    border: 1.5px solid #1c262c;
     -webkit-border-radius: 50px;
             border-radius: 50px;
     -webkit-transition: all 0.3s ease-in-out;
