@@ -10,4 +10,19 @@ $(document).ready(function() {
             scrollTop: $(".contact").offset().top
         }, 2000, "easeInOutExpo");
     });
+
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 250) {
+            $(".back-to-top").fadeIn(900, "swing");
+        } else {
+            $(".back-to-top").fadeOut(900, "swing");
+        }
+    });
+    $(".back-to-top").click(function(event) {
+        event.preventDefault();
+        $("html, body").animate({
+            scrollTop: 0}, 2000, "easeInOutExpo");
+        return false;
+    })
+
 });
