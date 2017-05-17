@@ -7,7 +7,7 @@
  */
 /* Document
    ========================================================================== */
-@import url("https://fonts.googleapis.com/css?family=Raleway");
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700");
 html {
   font-family: sans-serif;
   /* 1 */
@@ -420,7 +420,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 68px;
   text-align: center;
   line-height: 1.2;
-  letter-spacing: -0.5px; }
+  letter-spacing: -2px; }
 
 .large, h2 {
   font-size: 42px;
@@ -431,14 +431,14 @@ h1, h2, h3, h4, h5, h6 {
   color: #1c262c;
   line-height: 1.38;
   text-align: center;
-  letter-spacing: -0.5px; }
+  letter-spacing: -1px; }
 
 .big, h4 {
   font-size: 22px;
   color: #1c262c;
   line-height: 1.38;
   text-align: center;
-  letter-spacing: -0.5px; }
+  letter-spacing: -1px; }
 
 .small, small {
   font-size: 10px;
@@ -455,8 +455,7 @@ em {
   font-style: italic; }
 
 strong {
-  font-weight: bold;
-  letter-spacing: -0.5px; }
+  font-weight: 600; }
 
 hr {
   border: solid #ddd;
@@ -577,10 +576,10 @@ section.hero {
       transition: all 0.3s ease-in-out;
       cursor: pointer; }
     section.hero .hero-content .contact-button:hover {
-      font-weight: bold;
+      padding: 10px 40px;
+      font-weight: 500;
       color: #4a4c4f;
-      background: #fff;
-      padding: 10px 40px; }
+      background: #fff; }
   @media (max-width: 767px) {
     section.hero .hero-content h1 {
       font-size: 52px; }
@@ -1095,10 +1094,10 @@ section.contact {
     transition: all 0.3s ease-in-out;
     cursor: pointer; }
   section.contact .mail-button:hover {
-    font-weight: bold;
+    padding: 15px 40px;
+    font-weight: 500;
     color: #1c262c;
-    background: white;
-    padding: 15px 40px; }
+    background: white; }
   section.contact .mail-arrow {
     margin-left: 80px;
     margin-top: 30px;
