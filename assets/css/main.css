@@ -7,6 +7,7 @@
  */
 /* Document
    ========================================================================== */
+@import url("https://fonts.googleapis.com/css?family=Raleway");
 html {
   font-family: sans-serif;
   /* 1 */
@@ -408,7 +409,7 @@ template {
 .gigantic, .huge, .large, .bigger, .big,
 h1, h2, h3, h4, h5, h6 {
   color: black;
-  font-weight: bold; }
+  font-weight: bolder; }
 
 .gigantic {
   font-size: 110px;
@@ -418,7 +419,8 @@ h1, h2, h3, h4, h5, h6 {
 .huge, h1 {
   font-size: 68px;
   text-align: center;
-  line-height: 1.2; }
+  line-height: 1.2;
+  letter-spacing: -0.5px; }
 
 .large, h2 {
   font-size: 42px;
@@ -428,13 +430,15 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 38px;
   color: #1c262c;
   line-height: 1.38;
-  text-align: center; }
+  text-align: center;
+  letter-spacing: -0.5px; }
 
 .big, h4 {
   font-size: 22px;
   color: #1c262c;
   line-height: 1.38;
-  text-align: center; }
+  text-align: center;
+  letter-spacing: -0.5px; }
 
 .small, small {
   font-size: 10px;
@@ -451,7 +455,8 @@ em {
   font-style: italic; }
 
 strong {
-  font-weight: bold; }
+  font-weight: bold;
+  letter-spacing: -0.5px; }
 
 hr {
   border: solid #ddd;
@@ -547,7 +552,7 @@ section.hero {
     margin: 0 30px;
     text-align: center; }
     section.hero .hero-content h1 {
-      font-size: 68px;
+      font-size: 70px;
       color: #fff;
       margin-top: 0px;
       margin-bottom: 0px; }
