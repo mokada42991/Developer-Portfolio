@@ -1,4 +1,6 @@
 $(document).ready(function() {
+    $('body').bind('touchstart', function() {});
+    
     $(".learnMore").on("click", function() {
         $("html, body").animate({
             scrollTop: $(".about").offset().top
